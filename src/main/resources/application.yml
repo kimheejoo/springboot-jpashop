@@ -11,9 +11,9 @@ spring:
     properties:
       hibernate:
 #        show_sql: true
-        format_sql: true
+        format_sql: true #show_sql은 한줄로 보여준다면 format_sql은 예쁘게 보여줌
 
 logging:
   level:
-    org.hibernate.SQL: debug
-#    org.hibernate.type: trace
+    org.hibernate.SQL: debug #쿼리 보기
+#    org.hibernate.type: trace # 쿼리 파라미터 보기
