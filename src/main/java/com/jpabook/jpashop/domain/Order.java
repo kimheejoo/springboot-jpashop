@@ -19,7 +19,7 @@ public class Order {
     @Column(name="order_id")
     private Long id;
 
-    @ManyToOne(fetch = LAZY) // order:member=다:1, XtoOne의 경우 default가 EAGER 타입인데 얘는 즉시로딩이라 연관된 테이블 다 불러옴 그래서 안쓰는걸 권장
+    @ManyToOne(fetch = LAZY) // order:member=다:1, X의 경우 default가 EAGER 타입인데 얘는 즉시로딩이라 연관된 테이블 다 불러옴 그래서 안쓰는걸 권장
     @JoinColumn(name="member_id") // foreign key == member_id
     private Member member;
 

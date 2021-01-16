@@ -1,4 +1,4 @@
-spring: // 아무것도 안쓰면 메모리모드로 디비 실행
+spring: # 아무것도 안쓰면 메모리모드로 디비 실행
 #  datasource:
 #    url: jdbc:h2:mem:test
 #    username: sa
@@ -7,7 +7,7 @@ spring: // 아무것도 안쓰면 메모리모드로 디비 실행
 #
 #  jpa:
 #    hibernate:
-#      ddl-auto: create-drop
+#      ddl-auto: create
 #    properties:
 #      hibernate:
 ##        show_sql: true
