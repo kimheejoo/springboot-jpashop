@@ -12,7 +12,7 @@ import java.util.List;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE) // single_table은 한 테이블에 싹 다 박아넣는거..
 @DiscriminatorColumn(name="dtype") // book이면 ~이렇게, album이면 ~~이렇게 -> 이런식으로 구별하기위해 dtype
-@Getter
+@Getter @Setter
 public abstract class Item {
 
     @Id @GeneratedValue
